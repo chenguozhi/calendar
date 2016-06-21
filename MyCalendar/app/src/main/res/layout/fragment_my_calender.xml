@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+    <!--日历标题 头-->
+    <include layout="@layout/my_calender_title" />
+
+    <choosetime.com.example.chen.mycalendar.calendar.fragment.widget.HandMoveLayout
+        android:id="@+id/handmovelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--viewppager-->
+
+        <include layout="@layout/calender_week_layout" />
+
+
+        <LinearLayout
+            android:id="@+id/handmove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg"
+            android:orientation="vertical">
+
+
+
+            <!--添加一条线   -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bottom_gray" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="afterDescendants"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/ll_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_bg">
+
+                <ImageView
+                    android:id="@+id/ic_no_data_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/no_data"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:text="........"
+                    android:textColor="@color/last_msg_tv_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </choosetime.com.example.chen.mycalendar.calendar.fragment.widget.HandMoveLayout>
+</LinearLayout>

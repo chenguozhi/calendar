@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@color/common_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/calendar_Mon"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/calendar_Tus"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/calendar_Wes"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/calendar_Thus"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/calendar_Fri"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/calendar_Sat"
+            android:textColor="@color/purple" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_calendar_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <choosetime.com.example.chen.mycalendar.calendar.fragment.widget.HasTwoAdapterViewpager
+            android:id="@+id/calendar_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            >
+
+        </choosetime.com.example.chen.mycalendar.calendar.fragment.widget.HasTwoAdapterViewpager>
+        <choosetime.com.example.chen.mycalendar.calendar.fragment.widget.HasTwoAdapterViewpager
+            android:id="@+id/calendar_viewpager_week"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+
+            >
+
+        </choosetime.com.example.chen.mycalendar.calendar.fragment.widget.HasTwoAdapterViewpager>
+
+    </LinearLayout>
+</LinearLayout>

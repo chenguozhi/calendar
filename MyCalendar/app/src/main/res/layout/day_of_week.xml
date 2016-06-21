@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@color/black_deep"-->
+    <!--android:text="日"-->
+    <!--/>-->
+    <LinearLayout
+        android:id="@+id/cal_container"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gongli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="12"
+            android:textColor="@color/black_deep"
+            android:textSize="@dimen/app_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nongli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="初一"
+            android:textColor="@color/last_msg_tv_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imv_point"
+        android:layout_width="5dip"
+        android:layout_height="5dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="2dip" />
+</LinearLayout>

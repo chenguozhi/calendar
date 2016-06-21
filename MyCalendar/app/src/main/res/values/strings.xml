@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyCalendar</string>
+    <string name="action_settings">Settings</string>
+    <string name="calendar_Wes">三</string>
+    <string name="nowday">今天</string>
+    <string name="calendar_Sat">六</string>
+    <string name="calendar_Fri">五</string>
+    <string name="calendar_Thus">四</string>
+    <string name="calendar_Tus">二</string>
+    <string name="calendar_Mon">一</string>
+    <string name="access_fail">访问失败</string>
+</resources>
