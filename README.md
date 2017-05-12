@@ -4,4 +4,5 @@
 效果图如下
 
 ![alt text](calendar.gif)
-coding.net地址：https://coding.net/u/chenguozhi/p/android-calendar/git
+有小伙伴新写的demo，比这个好用，大家去copy这个吧；
+https://github.com/xiaojianglaile/Calendar
